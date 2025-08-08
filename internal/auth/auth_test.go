@@ -17,7 +17,7 @@ func TestGetAPIKey1(t *testing.T) {
 		t.Fatalf("expected: nil error, got: %s", err)
 	}
 
-	if got == want { //restore to got != want
+	if got != want {
 		t.Fatalf("expected: %s, got: %s", want, got)
 	}
 }
